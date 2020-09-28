@@ -1,3 +1,4 @@
+
 using Microsoft.AspNetCore.Http;
 
 namespace HeroTrainerApp.API.Helpers
@@ -10,6 +11,9 @@ namespace HeroTrainerApp.API.Helpers
             response.Headers.Add("Access-Control-Expose-Headers", "Application-Error");
             response.Headers.Add("Access-Control-Allow-Origin", "*");
         }
+
+
+
 
     }
 }

@@ -1,3 +1,36 @@
-<p>
-  Trainer works!
-</p>
+<div class="heroesTable form-group">
+  <div class="row">
+    <div *ngFor="let hero of heroes" class="card" style="width: 15rem">
+      <div class="card-header">
+        {{ hero.name }}
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{ hero.guidId }}</li>
+        <li class="list-group-item">Ability: {{ hero.ability }}</li>
+        <li class="list-group-item">
+          Start train at: {{ hero.trainingStartDay | date: "dd/MM/yyyy" }}
+        </li>
+        <li class="list-group-item">Suit color: {{ hero.suitColor }}</li>
+        <li class="list-group-item">
+          Starting power: {{ hero.startingPower / 100 | percent }}
+        </li>
+        <li class="list-group-item">
+          <input
+            [(ngModel)]="currentPower"
+            name="currentPower"
+            #ctrl="ngModel"
+          />
+          Current power: {{ hero.currentPower / 100 | percent }}
+        </li>
+        <li class="list-group-item">
+          <button
+            (click)="trainHero(hero.guidId)"
+            class="btn btn-dark btn-block"
+          >
+            train hero
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

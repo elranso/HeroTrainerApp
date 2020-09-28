@@ -1,0 +1,134 @@
+[
+  {
+    
+    "GuidId": "56f0ddad-7003-4f37-95b1-933cf7af99d8",
+    "TrainerId": 2,
+    "Name": "Miracle Man",
+    "Ability": "defender",
+    "TrainingStartDay": "2019-12-28",
+    "SuitColor": "Green",
+    "StartingPower": 11.5,
+    "CurrentPower": 35.0
+  },
+  {
+    
+    "GuidId": "96a6547c-f835-414f-b393-fdc81b0775c6",
+    "TrainerId": 3,
+    "Name": "Swamp Thing",
+    "Ability": "attacker",
+    "TrainingStartDay": "2020-07-04",
+    "SuitColor": "Purple",
+    "StartingPower": 35.0,
+    "CurrentPower": 67.2
+  },
+  {
+    
+    "GuidId": "1665a4ce-e5e5-48db-9c1e-a94582ecbad0",
+    "TrainerId": 1,
+    "Name": "Agent Electrical",
+    "Ability": "attacker",
+    "TrainingStartDay": "2020-01-25",
+    "SuitColor": "Aquamarine",
+    "StartingPower": 44.7,
+    "CurrentPower": 50.5
+  },
+  {
+   
+    "GuidId": "02e1c576-ba2e-4239-aba8-3ab76980b4d9",
+    "TrainerId": 2,
+    "Name": "Black Panther",
+    "Ability": "attacker",
+    "TrainingStartDay": "2019-10-21",
+    "SuitColor": "Black",
+    "StartingPower": 2.7,
+    "CurrentPower": 70.8
+  },
+  {
+    
+    "GuidId": "89500bf6-d762-493c-801d-b327d6a23960",
+    "TrainerId": 1,
+    "Name": "Captain America",
+    "Ability": "attacker",
+    "TrainingStartDay": "2020-02-25",
+    "SuitColor": "Blue",
+    "StartingPower": 33.3,
+    "CurrentPower": 73.7
+  },
+  {
+   
+    "GuidId": "8cfc6f36-c0f4-424a-8e2a-17c994f14fe1",
+    "TrainerId": 1,
+    "Name": "Translucent",
+    "Ability": "defender",
+    "TrainingStartDay": "2020-01-21",
+    "SuitColor": "Pink",
+    "StartingPower": 23.4,
+    "CurrentPower": 66.5
+  },
+  {
+   
+    "GuidId": "889c9cbb-879b-4bc2-80c9-66243a19dfaf",
+    "TrainerId": 2,
+    "Name": "Doctor Doom",
+    "Ability": "defender",
+    "TrainingStartDay": "2020-04-27",
+    "SuitColor": "Red",
+    "StartingPower": 16.7,
+    "CurrentPower": 64.7
+  },
+  {
+    
+    "GuidId": "9d68df79-bbab-4a0a-9dd9-c85bb657f250",
+    "TrainerId": 3,
+    "Name": "Big Buck",
+    "Ability": "defender",
+    "TrainingStartDay": "2020-03-03",
+    "SuitColor": "Blue",
+    "StartingPower": 47.5,
+    "CurrentPower": 58.5
+  },
+  {
+    
+    "GuidId": "d90e49a7-426e-4b14-8d1d-661fd7cd7386",
+    "TrainerId": 1,
+    "Name": "Vampire",
+    "Ability": "defender",
+    "TrainingStartDay": "2020-08-13",
+    "SuitColor": "Grey",
+    "StartingPower": 9.2,
+    "CurrentPower": 12.7
+  },
+  {
+    
+    "GuidId": "423fc177-25ff-4d6e-869d-c48ac7272141",
+    "TrainerId": 2,
+    "Name": "Batman",
+    "Ability": "defender",
+    "TrainingStartDay": "2019-12-08",
+    "SuitColor": "Teal",
+    "StartingPower": 35.6,
+    "CurrentPower": 62.3
+  },
+  {
+    
+    "GuidId": "fb9a96e4-4c35-4d10-af22-df51cdf99c6d",
+    "TrainerId": 3,
+    "Name": "Superman",
+    "Ability": "attacker",
+    "TrainingStartDay": "2020-02-16",
+    "SuitColor": "Orange",
+    "StartingPower": 12.7,
+    "CurrentPower": 45.6
+  },
+  {
+   
+    "GuidId": "6500d2fb-3d0c-4cf8-be41-f4440fed4116",
+    "TrainerId": 3,
+    "Name": "Mad man",
+    "Ability": "attacker",
+    "TrainingStartDay": "2020-02-20",
+    "SuitColor": "Violet",
+    "StartingPower": 14.6,
+    "CurrentPower": 15.5
+  }
+]

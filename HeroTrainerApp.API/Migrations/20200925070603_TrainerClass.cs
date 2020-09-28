@@ -4,10 +4,28 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace HeroTrainerApp.API.Migrations
 {
-    public partial class initialCreate : Migration
+    public partial class TrainerClass : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Trainers",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    FirstName = table.Column<string>(nullable: true),
+                    LastName = table.Column<string>(nullable: true),
+                    UserName = table.Column<string>(nullable: true),
+                    Password = table.Column<string>(nullable: true),
+                    PasswordHash = table.Column<byte[]>(nullable: true),
+                    PasswordSalt = table.Column<byte[]>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Trainers", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Heroes",
                 columns: table => new
@@ -26,23 +44,18 @@ namespace HeroTrainerApp.API.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Heroes", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Heroes_Trainers_TrainerId",
+                        column: x => x.TrainerId,
+                        principalTable: "Trainers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "Trainers",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    FirstName = table.Column<string>(nullable: true),
-                    LastName = table.Column<string>(nullable: true),
-                    UserName = table.Column<string>(nullable: true),
-                    Password = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Trainers", x => x.Id);
-                });
+            migrationBuilder.CreateIndex(
+                name: "IX_Heroes_TrainerId",
+                table: "Heroes",
+                column: "TrainerId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

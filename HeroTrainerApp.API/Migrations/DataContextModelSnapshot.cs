@@ -43,6 +43,8 @@ namespace HeroTrainerApp.API.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("TrainerId");
+
                     b.ToTable("Heroes");
                 });
 
@@ -58,11 +60,23 @@ namespace HeroTrainerApp.API.Migrations
 
                     b.Property<string>("Password");
 
+                    b.Property<byte[]>("PasswordHash");
+
+                    b.Property<byte[]>("PasswordSalt");
+
                     b.Property<string>("UserName");
 
                     b.HasKey("Id");
 
                     b.ToTable("Trainers");
+                });
+
+            modelBuilder.Entity("HeroTrainerApp.API.Models.Hero", b =>
+                {
+                    b.HasOne("HeroTrainerApp.API.Models.Trainer")
+                        .WithMany("Heroes")
+                        .HasForeignKey("TrainerId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

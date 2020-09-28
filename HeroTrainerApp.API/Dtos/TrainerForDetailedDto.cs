@@ -1,16 +1,14 @@
 using System.Collections.Generic;
+using HeroTrainerApp.API.Models;
 
-namespace HeroTrainerApp.API.Models
+namespace HeroTrainerApp.API.Dtos
 {
-    public class Trainer
+    public class TrainerForDetailedDto
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string UserName { get; set; }
-        public string Password { get; set; }
-        public byte[] PasswordHash { get; set; }
-        public byte[] PasswordSalt { get; set; }
         public ICollection<Hero> Heroes { get; set; }
     }
 }

@@ -1,0 +1,11 @@
+.heroesTable {
+  margin-left: 7%;
+}
+.card {
+  justify-content: center;
+  text-align: center;
+}
+.card-header {
+  background-color: #007bff;
+  color: white;
+}
